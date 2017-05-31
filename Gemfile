@@ -1,11 +1,5 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.1'
 # Use Puma as the app server
@@ -35,7 +29,7 @@ gem 'jbuilder', '2.4.1'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '1.3.12'
+  gem 'sqlite3', '1.3.12'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '9.0.0', platform: :mri
 end
